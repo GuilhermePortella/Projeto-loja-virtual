@@ -1,12 +1,12 @@
 # pit2
 
 ## requisitos para buildar o projeto:
- Java >13.
- npm: >9.8.1
- node: >18.17.1
- MySql
- Conta de developer: stripe.com
- Conta de developer: okta.com/
+ - Java >13.
+ - npm: >9.8.1
+ - node: >18.17.1
+ - MySql
+ - Conta de developer: stripe.com
+ - Conta de developer: okta.com/
 
 ## Instruções para o projeto angular ecommerce
 - Va para a parta do  projeto /angular-ecommerce-2
