@@ -6,7 +6,9 @@
  - node: >18.17.1
  - MySql
  - Conta de developer: stripe.com
- - Conta de developer: okta.com/
+ - Conta de developer: okta.com
+
+ - Para ter acesso aos scripts do banco de dados entre em contato comigo
 
 ## Instruções para o projeto angular ecommerce
 - Va para a parta do  projeto /angular-ecommerce-2
