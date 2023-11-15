@@ -80,11 +80,11 @@ openssl help
 
     # País, Estado e Localidade (cidade)
     C = BR
-    ST = São Paulo
-    L = São Paulo
+    ST = {your.city}
+    L = {your.city}
 
     # Organização e Unidade Organizacional (nome do departamento, nome do grupo)
-    O = luv2code
+    O = {your.user}
     OU = Treinamento
 
     # Nome Comum (nome de domínio totalmente qualificado do seu servidor de site)
@@ -115,7 +115,7 @@ localhost.crt   localhost.key
  - Na janela do terminal, execute este comando para gerar a chave e o certificado. Este é um comando longo; copie/cole na íntegra.
 
  ```
-  keytool -genkeypair -alias luv2code -keystore src/main/resources/luv2code-keystore.p12 -keypass secret -storeType PKCS12 -storepass secret -keyalg RSA -keysize 2048 -validity 365 -dname "C=US, ST=Pennsylvania, L=Philadelphia, O=luv2code, OU=Training Backend, CN=localhost" -ext "SAN=dns:localhost"
+  keytool -genkeypair -alias {your.user} -keystore src/main/resources/{your.user}-keystore.p12 -keypass secret -storeType PKCS12 -storepass secret -keyalg RSA -keysize 2048 -validity 365 -dname "C=US, ST={your.city}, L={your.city}, O={your.user}, OU=Training Backend, CN=localhost" -ext "SAN=dns:localhost"
 ```
 
 - Edite o arquivo application.properties
@@ -136,10 +136,10 @@ server.port=8443
 server.ssl.enabled=true
 
 # Alias that identifies the key in the key store
-server.ssl.key-alias=luv2code
+server.ssl.key-alias={your.user}
 
 # Keystore location
-server.ssl.key-store=classpath:luv2code-keystore.p12
+server.ssl.key-store=classpath:{your.user}-keystore.p12
 
 # Keystore password
 server.ssl.key-store-password=secret
