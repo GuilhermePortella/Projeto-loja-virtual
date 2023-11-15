@@ -102,8 +102,12 @@ openssl help
  ```
 localhost.crt   localhost.key
  ```
-
-
+ - procure o arquivo package.json
+ - dentro desde arquivo busque por Scripts e adicione a seguinte linha: 
+```
+"start": "ng serve --ssl=true --ssl-key=./ssl-localhost/localhost.key --ssl-cert=./ssl-localhost/localhost.crt"
+```
+ 
 ## Instruções para o projeto Java ecommerce
 
  - Abra uma janela de terminal/prompt de comando.
