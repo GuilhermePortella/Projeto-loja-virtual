@@ -1,7 +1,9 @@
 # pit2
 
+![Finalizado](http://img.shields.io/static/v1?label=STATUS&message=%20Finalizado&color=GREEN&style=for-the-badge)
+
 ## requisitos para buildar o projeto:
- - Java >13.
+ - Java > 13.
  - npm: >9.8.1
  - node: >18.17.1
  - MySql
